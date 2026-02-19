@@ -28,7 +28,7 @@ function TokenForm() {
 
     try {
       setLoading(true);
-      const response = await axios.post("http://localhost:5000/tokens/generate", {
+      const response = await axios.post("https://or-token-management.onrender.com/tokens/generate", {
         name,
         mobileNumber,
         maxCount,

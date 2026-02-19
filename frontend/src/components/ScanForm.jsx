@@ -22,7 +22,7 @@ function ScanForm({ tokenId }) {
     try {
       setLoading(true);
       const response = await axios.post(
-        `http://localhost:5000/tokens/scan/${tokenId}`,
+        `https://or-token-management.onrender.com/tokens/scan/${tokenId}`,
         {
         scanCount: count,
         }
